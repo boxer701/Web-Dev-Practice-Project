@@ -1,0 +1,140 @@
+/* Universal and Body Styles */
+:root {
+    --primary-color: #40f9ff;
+    --secondary-color: #ffb350;
+    --text-color: #fff;
+    --bg-color: #1a1a1a;
+    --form-text-color: #2724e9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    background-image: url("3409297.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(white);
+    text-shadow: 1px 1px 2px #000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Footer Styles */
+.main-header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-header h1 {
+    color: var(--secondary-color);
+    font-size: 3em;
+}
+
+.main-header p {
+    color: #ccc;
+    font-style: italic;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+}
+
+.main-footer .footer-contact h3 {
+    color: var(--primary-color);
+}
+
+.main-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-footer li {
+    margin: 5px 0;
+}
+
+.main-footer a {
+    color: #8cfff2;
+    text-decoration: none;
+}
+
+.copyright {
+    color: #aaa;
+    font-size: 0.8em;
+    margin-top: 15px;
+}
+
+/* Main Content Sections */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
+}
+
+/* Form Styles */
+.auth-section {
+    text-align: center;
+}
+
+.auth-section h2 {
+    color: var(--secondary-color);
+}
+
+form label {
+    color: var(--text-color);
+}
+
+form input[type="text"],
+form input[type="password"] {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+}
+
+form input[type="submit"] {
+    background-color: #2724e9;
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1a18a5;
+}
+
+/* Media Gallery Styles */
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+video, audio {
+    display: block;
+    max-width: 100%;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+}
